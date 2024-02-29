@@ -5,3 +5,41 @@ body {
 p {
     color: whitesmoke;
 }
+
+.acerca-imagen img {
+    width: 200px;
+    height: 250px;
+}
+
+.portada img {
+    width: 1250px;
+    height: 400px;
+}
+
+.fa-dna {
+    color:aliceblue;
+    font-size: 1.5em;
+}
+
+.navbar {
+    color:azure;
+}
+
+.acerca-titulo {
+    color:bisque;
+}
+
+ul,
+ol,
+li,
+a {
+    color:azure;
+}
+
+h3 {
+    color:aquamarine;
+}
+
+.lenguajes {
+    display: flex;
+}
