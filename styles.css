@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
   }
 
 body {
@@ -18,14 +20,34 @@ p {
 }
 
 .portada img {
-    width: 1900px;
+    width: 100%;
     height: 400px;
     margin-top: 100px;
 }
 
+
+
+
 .a-fa-dna {
     display: flex;
     align-items:center;
+}
+
+/* MENU */
+
+#check {
+    display: none;
+}
+
+.hammenu {
+    display: none;
+    color:#162b1d;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    font-size: 30px;
+    margin-top: -14px;
+    cursor: pointer;
 }
 
 .fa-dna {
@@ -38,11 +60,55 @@ p {
 .seccion-1 {
     display: flex;
     margin-left: 90px;
+    margin-top: 130px;
 }
 
-.navbar {
-    color:azure;
-}
+
+
+nav ul li {
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+
+  nav ul li a {
+    color: #eeeeee;
+  }
+
+  /* ENCABEZADO */
+
+  header {
+    width: 100%;
+  }
+
+  header {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+  }
+
+  header nav {
+    height: 80px;
+    float: right;
+  }
+
+  
+  nav ul.menu {
+    float: right;
+  }
+
+  nav ul.menu li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+
+  nav ul.menu li a {
+    color: #eee;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 7px 7px;
+  }
 
 .acerca-de {
     height: 100px;
@@ -85,8 +151,10 @@ h3 {
     justify-content: center;
   }
 
+
+
 .menu {
-    width: 900px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
   }
@@ -111,6 +179,137 @@ li{
     color: azure;
 }
 
+  /* Estilos para pantallas más pequeñas (hasta 768px) */
+  @media (max-width: 768px) {
+    /* Aquí puedes escribir los estilos que se aplicarán en pantallas más pequeñas */
+  .menu-container {
+    height: 80px;
+  }
+
+  /* menu javascript */
+
+.hammenu {
+     display: block;
+}
+
+.seccion-1 {
+    display: flex;
+    flex-direction: column; 
+    flex-wrap: wrap;
+    align-items: center;
+    height: 450px;
+    margin-top: 90px;
+}
+
+.acerca-de, 
+.parrafo1 {
+   width: 250px; 
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: justify;
+    margin-left: -40px;
+    margin-top: 20px;
+    font-size: small;
+}
+
+.acerca-imagen {
+    position:relative;
+    top: 135px;
+    left: -40px;
+}
+
+.navbar {
+    height: 0vh;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: #2c3e50;
+    text-align: center;
+
+    transition: all 0.5s;
+    overflow: hidden;
+  }
+  /* menu javascript */
+
+  /* menu css */
+
+  /* .hammenu {
+    display: block;
+}
+
+  .navbar .menu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    text-align: center;
+
+    top: 80px;
+    left: 100%;
+    transition: all 0.5s;
+
+  }
+
+  #check:checked ~ ul {
+    left: 0%;
+    display: block;
+  }
+
+  .navbar .menu li {
+    display:block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  .navbar .menu li a {
+    font-size: 20px;
+  }
+
+  #check:checked ~ .hammenu {
+    color:aqua;
+  } */
+
+  /* menu css */
+
+  /* menu javascript */
+
+  .navbar ul.menu {
+    float: none;
+    display: block;
+    width: 174px;
+    margin: 0 auto;
+    opacity: 0;
+  }
+
+  .navbar ul.menu li a:hover {
+    color: #b59a61;
+  }
+
+    /* menu javascript */
+
+ /* ACTIVE */
+ .navbar.active {
+    height: 100vh;
+  }
+
+  .navbar.active ul.menu {
+    opacity: 1;
+  }
+
+}
+
+.container-tarjetas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: -40px;
+}
+
 footer {
     background-color: darkblue;
     width: 100%;
@@ -122,11 +321,7 @@ footer {
 .container-footer {
     display: flex;
     justify-content: center;
-}
-
-.container-tarjetas {
-    display: flex;;
-    justify-content: center;
+    width: 100;
 }
 
 .tarjeta img{

@@ -6,19 +6,28 @@
     <title>Mi primera web</title>
     <link rel="stylesheet" href="./styles.css">
     <script src="https://kit.fontawesome.com/3868bf37f3.js" crossorigin="anonymous"></script>
+    <script async src="script.js"></script>
 </head>
 <body>
     <div>
         <header class="menu-container">
             <div class="menu">
                 <a class="a-fa-dna" href="https://github.com/josephmb830"><i class="fa-solid fa-dna"></i></a> 
+                <input type="checkbox" id="check" />
+                    <label class="hammenu" for="check">
+                        <i class="fa fa-bars"></i>
+                    </label>
                 <nav class="navbar">
-                    <ul class = "lista-nav">
-                        <li>Inicio</li>
-                        <li>Acerca de mi</li>
-                        <li>Trabajos</li>
-                        <li>Servicios</li>
-                        <li>Contacto</li>
+                    <!-- <input type="checkbox" id="check" />
+                    <label class="hammenu" for="check">
+                        <i class="fa fa-bars"></i>
+                    </label> -->
+                    <ul class = "menu">
+                        <li><a class="navli" href="">Inicio</a></li>
+                        <li><a class="navli" href="">Acerca de mí</a></li>
+                        <li><a class="navli" href="">Trabajos</a></li>
+                        <li><a class="navli" href="">Servicios</a></li>
+                        <li><a class="navli" href="">Contacto</a></li>
                     </ul>
                 </nav>
             </div>          
@@ -26,15 +35,8 @@
         <main id="seccion-principal">
             <section class="seccion-1">
                 <div class="acerca-de">
-                    <h2 class="acerca-titulo">Acerca de mí</h2>
-                    <p class="parrafo1">¡Bienvenido a mi página! Aquí, aprenderás más sobre mí. Soy Joseph Morán tengo 29 años y me gusta la ciencia y el arte, y por esta dualidad fue que mi camino ha sido algo diferente.</p>
-                    <p class="parrafo2">Soy egresado de la carrera de comunicaciones de la Universidad de Lima donde me dirigí a la rama de Publicidad y Marketing y me interesé finalmente por el diseño de aplicaciones, gané un concurso de emprendedores en la universidad por el diseño de una aplicación pero nos faltaba un programador así que realmente nunca pudimos empezar el proyecto y fué donde me dí cuenta de que realmente quería ser programador, estar del lado de la tecnología y crear innovaciones digitales.</p>
-                    <h3>Mi presentación</h3>
-                    <p>Así que estudié cursos online de programación y también en Platzi y conseguí mi primer trabajo como programador web FullStack en una institución pública, en la municipalidad de Magdalena del Mar, donde actualmente trabajo. Aunque realmente el puesto es de asistente de informática así que sí tengo horas donde programo pero otras donde realizo actividades de soporte técnico. En este trabajo fue que un colega me avisó de la beca generación digital y no dudé en inscribirme.</p>
-                    <p>Actualmente mi sueño es trabajar en el campo de la bioinformática porque desde pequeño me fascinó la biología y creo que de no ser por la informática no podríamos conocer tan a profundidad su funcionamiento como lo conocemos hoy en día. Por ello me animé a tomar este curso porque creo que la programación web FullStack es la base fundamental para construir sistemas más complejos capaces de hacernos comprender y conocer mejor nuestra biología.</p>
-                    <p>Si tuviera que pensar en algún referente digital diría Elon Musk y Jeff Bezos ambos programaron las plataformas de sus empresas y me inspiran a seguir mi camino.</p>
-                    <p>Muy a largo plazo dentro de la bioinformática me gustaría especializarme en ciencia de datos y estudiar la genética humana para aportar en avances médicos del futuro.</p>
-                    <p>A mediano plazo me gustaría conseguir un mejor trabajo de programador al terminar este curso uno donde pueda programar a tiempo completo, también poder entender más a profundidad la programación web FullStack, y a partir de ahí seguir mis estudios en algún instituto en ciencias de la computación a la par del trabajo.</p>
+                    <h2 class="acerca-titulo" id="acerca-de">Acerca de mí</h2>
+                    <p class="parrafo1">Joseph Morán, de 29 años, es un profesional en comunicaciones y diseño de aplicaciones convertido en programador web FullStack. Actualmente, trabaja en la municipalidad de Magdalena del Mar y se ha inscrito en la beca Generación Digital. Sueña con trabajar en bioinformática, especializarse en ciencia de datos y contribuir a avances médicos, inspirado por figuras como Elon Musk y Jeff Bezos. A corto plazo, busca un empleo que le permita programar a tiempo completo y profundizar en sus estudios de programación web FullStack.</p>
                     <a href="https://github.com/josephmb830">Repositorios en github</a>
                 </div>
                 <div class="acerca-imagen">
