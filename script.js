@@ -1,8 +1,8 @@
 // alert("Hola este es mi Javascript");
 
-let nombre = "Joseph";
+let name = "Joseph";
 
-console.log(nombre);
+console.log(name);
 
 let acercacontenido = "Sobre mí";
 let acerca1 = (document.getElementById("acerca-de"));
@@ -26,3 +26,38 @@ menu_responsive.onclick = function () {
   navBar = document.querySelector(".navbar");
   navBar.classList.toggle("active");
 };
+
+// validación del formulario;
+
+const form = document.getElementById("form");
+const nombre = document.getElementById("nombre");
+const parrafo = document.getElementById("alertas");
+
+function validarFormulario() {
+  let warnings = "";
+  let valido = true;
+  parrafo.innerHTML = "";
+
+  if (nombre.value.length < 4) {
+    warnings += `El nombre debe contener más de 4 caracteres`;
+    valido = false;
+  }
+
+  if (!valido) {
+    parrafo.innerHTML = warnings;
+  } else {
+    parrafo.innerHTML = "Enviado";
+  }
+  return valido;
+}
+
+form.addEventListener("submit", (e) => {
+  if (validarFormulario()) {
+    // Si la validación es exitosa, puedes enviar el formulario
+    formulario.submit();
+  } else {
+    e.preventDefault(); // Evita que el formulario se envíe automáticamente
+  }
+});
+
+// fin de validación del formulario
