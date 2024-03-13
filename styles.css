@@ -301,6 +301,7 @@ footer {
 
   /* Estilos para pantallas más pequeñas (hasta 768px) */
   @media (max-width: 768px) {
+
     /* Aquí puedes escribir los estilos que se aplicarán en pantallas más pequeñas */
   .menu-container {
     height: 80px;
@@ -419,7 +420,9 @@ footer {
     opacity: 1;
   }
 
-  
+  .form-row textarea {
+    width: 170px;
+  }
 
 }
 
@@ -499,16 +502,18 @@ footer {
     margin-top: 7px;
     padding-right: 20px;
   }
-}
 
-.form-row textarea {
-  width: 250px;
-}
-
-  /* button */
+  .form-row textarea {
+    width: 250px;
+  }
   
-.form-row button {
-  margin-left: 120px; 
+    /* button */
+    
+  .form-row button {
+    margin-left: 120px; 
+  }
+
 }
+
 
 /* ------------- fin contacto ------------- */
