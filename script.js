@@ -61,3 +61,9 @@ form.addEventListener("submit", (e) => {
 });
 
 // fin de validación del formulario
+
+const imprimir = (texto) => {
+  console.log(texto);
+}
+
+imprimir("Hola Mundo");
