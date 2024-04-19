@@ -491,6 +491,16 @@ footer {
     margin-left: 130px;
 }
 
+.card-button a {
+  color: #162b1d;
+  font-weight: 700;
+  background-color: #5995da;
+  padding: 4px;
+}
+
+.card-button a:hover{
+  color: darkblue
+}
 
 /* ------------- Para Pantallas de más de 700px ------------- */
 @media only screen and (min-width: 700px) {
